@@ -1,12 +1,12 @@
-let express = require('express'), 
+let config = require('./config.json'),
+    express = require('express'), 
     mongodb = require('mongodb'),
     routes = require('./app/routes/index');
     MongoClient = mongodb.MongoClient;
     app = express();
 
-let url = "mongodb://majidh:majidh123@ds113825.mlab.com:13825/urls", 
-    db;
-MongoClient.connect(url, function(err, database) {
+let db;
+MongoClient.connect(config.DB_URL, function(err, database) {
     if (err) throw err;
     console.log('Connected to the db');
     db = database;
