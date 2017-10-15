@@ -1,7 +1,7 @@
 {
-  "name": "shortener",
+  "name": "utl_short",
   "version": "1.0.0",
-  "description": "",
+  "description": "Url Shortening service",
   "main": "app.js",
   "dependencies": {
     "express": "^4.16.1",
@@ -13,6 +13,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Majidh",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devdivdev/fcc-URL-Shortener-Microservice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devdivdev/fcc-URL-Shortener-Microservice/issues"
+  },
+  "homepage": "https://github.com/devdivdev/fcc-URL-Shortener-Microservice#readme"
 }
