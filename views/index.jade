@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    script(type='text/javascript').
+      if (foo) bar(1 + 5)
+  body
+    h1= title
+    #container.col
+      if youAreUsingJade
+        p You are amazing
+      else
+        p Get on it!
+      p.
+        Jade is a terse and simple templating language with a
+        strong focus on performance and powerful features. Test
+      form(action="/sub", method="post")
+        div
+          label(for="firstname") Firstname: 
+          input(type="text")
+        div
+          label(for="lastname") Lastname
+          input(type="text")
+        div
+          input(type="button", value="send")
