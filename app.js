@@ -1,8 +1,8 @@
 let config = require('./config.json'),
     express = require('express'), 
     mongodb = require('mongodb'),
-    routes = require('./app/routes/index');
-    MongoClient = mongodb.MongoClient;
+    routes = require('./app/routes/index'),
+    MongoClient = mongodb.MongoClient,
     app = express();
 
 let db;
